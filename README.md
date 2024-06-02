@@ -2,6 +2,11 @@
 
 Este é um projeto pessoal de e-commerce desenvolvido para testar e aprimorar meus conhecimentos e técnicas de desenvolvimento e planejamento de software.
 
+## Documentos Principais
+
+- [Código de Conduta](CODE_OF_CONDUCT.md)
+- [Regras para Contribuir](CONTRIBUTING.md)
+
 ## Tecnologias
 
 Até o momento, estou utilizando o Laravel como framework principal.
