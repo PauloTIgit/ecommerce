@@ -57,6 +57,10 @@ Para mais detalhes, confira a nossa [página de regras para contribuir](CONTRIBU
 
 Este projeto é licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+## Tarefas do Projeto
+
+Para acompanhar e gerenciar as tarefas do projeto, acesse o [GitHub Projects - Projeto E-commerce](https://github.com/PauloTIgit/ecommerce/projects).
+
 ---
 
 Este README pode ser atualizado conforme o projeto evolui e novas tecnologias ou funcionalidades são incorporadas. Fique à vontade para abrir issues e sugerir melhorias!
@@ -64,3 +68,4 @@ Este README pode ser atualizado conforme o projeto evolui e novas tecnologias ou
 ---
 
 Sinta-se à vontade para explorar, aprender e contribuir. Obrigado por visitar o repositório do Projeto E-commerce!
+
