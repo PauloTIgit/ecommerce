@@ -2,6 +2,11 @@
 
 Este é um projeto pessoal de e-commerce desenvolvido para testar e aprimorar meus conhecimentos e técnicas de desenvolvimento e planejamento de software.
 
+## Documentos Principais
+
+- [Código de Conduta](CODE_OF_CONDUCT.md)
+- [Regras para Contribuir](CONTRIBUTING.md)
+
 ## Tecnologias
 
 Até o momento, estou utilizando o Laravel como framework principal.
@@ -46,9 +51,15 @@ Se você deseja contribuir para este projeto, siga os passos abaixo:
 4. Faça um push para a branch (`git push origin feature/nova-feature`).
 5. Abra um Pull Request.
 
+Para mais detalhes, confira a nossa [página de regras para contribuir](CONTRIBUTING.md).
+
 ## Licença
 
 Este projeto é licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Tarefas do Projeto
+
+Para acompanhar e gerenciar as tarefas do projeto, acesse o [GitHub Projects - Projeto E-commerce](https://github.com/PauloTIgit/ecommerce/projects).
 
 ---
 
@@ -57,3 +68,4 @@ Este README pode ser atualizado conforme o projeto evolui e novas tecnologias ou
 ---
 
 Sinta-se à vontade para explorar, aprender e contribuir. Obrigado por visitar o repositório do Projeto E-commerce!
+
