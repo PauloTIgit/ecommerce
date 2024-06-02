@@ -46,6 +46,8 @@ Se você deseja contribuir para este projeto, siga os passos abaixo:
 4. Faça um push para a branch (`git push origin feature/nova-feature`).
 5. Abra um Pull Request.
 
+Para mais detalhes, confira a nossa [página de regras para contribuir](CONTRIBUTING.md).
+
 ## Licença
 
 Este projeto é licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
