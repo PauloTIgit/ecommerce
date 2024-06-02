@@ -2,19 +2,24 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\Controller;
 
 class AuthController extends Controller
 {
     public function loginUser( Request $request ){
-
-        $validation = Validador::make($request->all(),[
-            'email'=>'required|string',
-            'password'=> 'required|string|min:6'
+        // Valida a entrada do usuário
+        $validatedData = $request->validate([
+            'email' => 'required|string',
+            'password' => 'required|string|min:6'
         ]);
-
-        print_r($validation->fails()); die();
+        // Adiciona status à resposta
+        $response = [
+            'status' => 200,
+            'email' => $validatedData['email'],
+            'password' => $validatedData['password']
+        ];
+        // Retorna a resposta como JSON
+        return response()->json($response);
     }
 }
