@@ -3,19 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Role;
- 
+use App\Models\User;
 
-class AuthController extends Controller
+class AdminController extends Controller
 {
     public function createCustomer()
     {
       $user         =  new User();
-      $user->name   =  'Admin';
-      $user->email   =  'admin@gmail.com';
-      $user->password = Hash::make('1234');
+      $user->name   =  'Paulo Ferreira';
+      $user->email   =  'pauloferreiradevs@gmail.com';
+      $user->password = Hash::make('19012001');
       $user->save();
  
       $admin = Role::where('slug','admin')->first();

@@ -84,13 +84,16 @@
 					dataType: 'json',
 					success: function(result) {
 						if (result.status == 200) {
-							alert('Sucesso');
+							console.log(result);							
+							window.location.href = result.url;
 						} else {
 							alert('Credenciais erradas');
 						}
 					},
 					error: function(xhr, status, error) {
 						alert('Ocorreu um erro: ' + error);
+						console.log('Erro de comunicação com o banco de dados | ERRO: '+ error);
+						
 					}
 				});
 			} else {

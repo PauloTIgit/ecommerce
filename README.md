@@ -9,37 +9,7 @@ Este é um projeto pessoal de e-commerce desenvolvido para testar e aprimorar me
 
 ## Tecnologias
 
-Até o momento, estou utilizando o Laravel como framework principal.
-
-## Tarefas
-
-O desenvolvimento do projeto será baseado nas principais metodologias de projeção e desenvolvimento de software, desde a definição de pré-requisitos até a implementação. As tarefas incluem, mas não se limitam a:
-
-### Análise de Requisitos
-- [ ] Identificar e documentar requisitos funcionais e não funcionais.
-- [ ] Definir casos de uso e cenários de usuário.
-
-### Projeto do Sistema
-- [ ] Desenhar a arquitetura do sistema.
-- [ ] Criar diagramas de entidade-relacionamento (ERD).
-- [ ] Planejar a estrutura de banco de dados.
-
-### Desenvolvimento
-- [ ] Configurar o ambiente de desenvolvimento.
-- [ ] Implementar a autenticação de usuários.
-- [ ] Desenvolver funcionalidades de cadastro e gerenciamento de produtos.
-- [ ] Implementar carrinho de compras e fluxo de checkout.
-- [ ] Criar telas para simulação de sistema de pagamento (sem integração real).
-
-### Testes
-- [ ] Escrever e executar testes unitários e de integração.
-- [ ] Realizar testes de usabilidade.
-- [ ] Corrigir bugs e otimizar o código.
-
-### Deploy e Manutenção
-- [ ] Preparar o ambiente de produção.
-- [ ] Fazer deploy do sistema.
-- [ ] Monitorar a aplicação e realizar manutenções conforme necessário.
+Laravel v10
 
 ## Como Contribuir
 

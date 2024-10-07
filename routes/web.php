@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Admin\AdminController;
+use App\Models\Role;
+use Illuminate\Support\Facades\Hash;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,21 +17,37 @@ use App\Http\Controllers\Auth\AuthController;
 |
 */
 
+
+// Route::get('/', function () {
+//     return view('home/ecommerce');
+// });
+
 Route::get('/', function () {
+    return redirect('admin/dashboard');
+});
+
+Route::get('/version', function () {
     return view('welcome');
 });
 
-Route::get('/painel', function () {
-    return view('admin/index');
+Route::get("/painel", function () {
+    return redirect('admin/dashboard');
 });
 
 Route::get('/entrar', function () {
     return view('auth/signIn');
 });
 
+Route::get('/sair', function () {
+    Auth::logout();
+    return redirect('entrar');
+});
+
 Route::get('/cadastre-se', function () {
     return view('auth/signUp');
 });
+
+
 
 Route::post('/login_user', [AuthController::class,'loginUser']);
 Route::post('/creat_user', [AuthController::class, 'creatUser']);
