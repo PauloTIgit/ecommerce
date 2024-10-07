@@ -11,16 +11,13 @@
 			<div class="container-fluid">
 				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
 					<div class="col mx-auto">
-						<div class="mb-4 text-center">
-							<img src="assets/images/logo-img.png" width="180" alt="" />
-						</div>
 						<div class="card">
 							<div class="card-body">
 								<div class="border p-4 rounded">
 									<div class="text-center">
 										<h3 class="">Entrar</h3>
-										<p>Não tem uma conta ainda? <a href="./cadastre-se">Cadastre-se aqui</a>
-										</p>
+										<!-- <p>Não tem uma conta ainda? <a href="./cadastre-se">Cadastre-se aqui</a> 
+											</p>-->
 									</div>
 									<!-- <div class="d-grid">
 										<a class="btn my-4 shadow-sm btn-white" href="javascript:;"> 
@@ -84,20 +81,30 @@
 					dataType: 'json',
 					success: function(result) {
 						if (result.status == 200) {
-							console.log(result);							
+							showAlert('sucess', 'sucesso')					
 							window.location.href = result.url;
 						} else {
-							alert('Credenciais erradas');
+							showAlert('error', 'Dados não encotrados')					
 						}
 					},
 					error: function(xhr, status, error) {
-						alert('Ocorreu um erro: ' + error);
+						showAlert(status, message)
 						console.log('Erro de comunicação com o banco de dados | ERRO: '+ error);
 						
 					}
 				});
 			} else {
-				alert('Ocorreu um erro');
+				//
 			}
 		});
+	</script>
+
+	<script>
+		function showAlert(status, message){
+			SnackBar({
+				status:status,
+				message:message,
+				position:'br'
+			});
+		}
 	</script>

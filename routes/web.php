@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\homeBannerController;
 use App\Models\Role;
 use Illuminate\Support\Facades\Hash;
 /*
@@ -48,6 +49,11 @@ Route::get('/cadastre-se', function () {
 });
 
 
-
 Route::post('/login_user', [AuthController::class,'loginUser']);
-Route::post('/creat_user', [AuthController::class, 'creatUser']);
+Route::post('/creat_user', function () {
+    return redirect('admin/dashboard');
+});
+
+// Route::get('/creat_user', [AdminController::class, 'createCustomer']);
+
+

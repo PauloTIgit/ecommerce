@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 
 class AuthController extends Controller
@@ -44,5 +45,23 @@ class AuthController extends Controller
     public function creatUser( Request $request )
     {
 
+        $validation = Validator::make($request->all(), [
+            'name'      => "required|string",
+            "email"     => "required|string|email|exists:users,email",
+            "password"  => "required|string|min:6"
+        ]);
+
+        if( $validation->fails() ){
+            return response()->json(['status'=>400,'message'=>$validation->errors()->first()]);
+        }else{
+            // Cria o novo usuário no banco de dados
+            $user = new User();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = Hash::make($request->password); // Criptografa a senha
+            $user->save();
+
+            return response()->json(['status' => 200, 'message' => 'User created successfully']);
+        }
     }
 }

@@ -37,7 +37,7 @@
 								<div class="card">
 									<div class="card-body">
 										<div class="d-flex flex-column align-items-center text-center">
-											<img src="{{asset('assets/images/avatars/avatar-1.png')}}" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
+											<img src="{{ asset('assets/' . Auth::user()->image) }}" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
 											<div class="mt-3">
 												<h4>{{Auth::user()->name}}</h4>
 											</div>
@@ -150,7 +150,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--end page wrapper -->
+</div>
+<!--end page wrapper -->
 
 @endsection

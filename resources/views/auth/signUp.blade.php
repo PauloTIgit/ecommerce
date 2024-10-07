@@ -10,9 +10,8 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
                     <div class="col mx-auto">
-                        <div class="my-4 text-center">
-                            <img src="assets/images/logo-img.png" width="180" alt="" />
-                        </div>
+                        <br>
+                        <br>
                         <div class="card">
                             <div class="card-body">
                                 <div class="border p-4 rounded">
@@ -35,11 +34,11 @@
                                         <form class="row g-3" id="formSubmit">
                                             <div class="col-sm-6">
                                                 <label for="inputFirstName" class="form-label">Primeiro nome</label>
-                                                <input type="email" class="form-control" id="inputFirstName" placeholder="Jhon">
+                                                <input type="text" class="form-control" id="inputFirstName" placeholder="Jhon">
                                             </div>
                                             <div class="col-sm-6">
                                                 <label for="inputLastName" class="form-label">Sobrenome</label>
-                                                <input type="email" class="form-control" id="inputLastName" placeholder="Deo">
+                                                <input type="text" class="form-control" id="inputLastName" placeholder="Deo">
                                             </div>
                                             <div class="col-12">
                                                 <label for="inputEmailAddress" class="form-label">Endereço de email</label>
@@ -92,7 +91,7 @@
                     url: url,
                     data: $('#formSubmit').serialize(),
                     type: 'post',
-                    dataType: 'json',
+                    dataType: 'text',
                     success: function(result) {
                         if (result.status == 200) {
                             alert('Sucesso');

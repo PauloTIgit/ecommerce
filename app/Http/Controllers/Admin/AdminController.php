@@ -12,9 +12,10 @@ class AdminController extends Controller
     public function createCustomer()
     {
       $user         =  new User();
-      $user->name   =  'Paulo Ferreira';
-      $user->email   =  'pauloferreiradevs@gmail.com';
-      $user->password = Hash::make('19012001');
+      $user->name   =  'User Teste';
+      $user->email   =  'user_teste@gmail.com';
+      $user->password = Hash::make('12345678');
+      $user->image = 'images/avatars/perfilDefaut.jpg';
       $user->save();
  
       $admin = Role::where('slug','admin')->first();
